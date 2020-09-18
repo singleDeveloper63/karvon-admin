@@ -2,6 +2,10 @@
   "name": "admin",
   "version": "0.1.0",
   "private": true,
+  "engines": {
+    "node": "14.8.0",
+    "npm" : "6.14.5"
+  },
   "dependencies": {
     "@reduxjs/toolkit": "^1.4.0",
     "@testing-library/jest-dom": "^4.2.4",
