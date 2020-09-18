@@ -1,0 +1,29 @@
+@import '../node_modules/bootstrap/dist/css/bootstrap.min.css';
+@import '../node_modules/node-waves/dist/waves.min.css';
+@import '../node_modules/boxicons/css/boxicons.min.css';
+@import './styles.css';
+
+@font-face{
+    font-family: Regular;
+    src: url(./assets/fonts/Montserrat-Regular.ttf);
+}
+
+@font-face{
+    font-family: Bold;
+    src: url(./assets/fonts/Montserrat-SemiBold.ttf);
+}
+
+*{
+    box-sizing: border-box;
+    outline: none !important;
+}
+
+.text-sm{
+    font-style: normal !important;
+    font-size: 12px !important;
+    margin: 0px 5px;
+
+    @media(max-width: 450px){
+        display: none;
+    }
+}

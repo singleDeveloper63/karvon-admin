@@ -1,0 +1,12 @@
+.content{
+    margin-left:0px;
+    transition: 0.3s;
+    margin-top: 70px !important;
+}
+
+.open{
+    margin-left: 250px !important;
+    @media(max-width: 1100px){
+        margin-left: 0px !important;
+    }
+}
