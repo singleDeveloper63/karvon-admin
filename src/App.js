@@ -26,7 +26,7 @@ function App(){
     <div>
         <AppLayout>
           <Switch>
-            <Route exact path='/' render={() => <Redirect to='/dashboard'/> }/>
+            <Route exact path='/' component={ Dashboard } />
             <Route exact path='/dashboard' component={ Dashboard }/>
             <Route exact path='/categories' component={ Category }/>
           </Switch>
