@@ -1,0 +1,41 @@
+@import '../../../globals.scss';
+
+.addCategory{
+    width: 94%;
+    margin: 0px 3%;
+    margin-top: -50px;
+    height: auto;
+    font-family: Regular;
+    border-radius: 5px;
+    background: white;
+    padding: 30px;
+    border: 1px solid #ddd;
+
+    @media(max-width:450px){
+        padding: 10px;
+    }
+
+    input{
+        height: 50px;
+
+        &:focus{
+            border: 2px solid $yellow;
+        }
+    }
+    
+
+    &_submit{
+        padding: 7px 25px;
+        margin-top: 20px;
+        width: 100%;
+        border-radius: 5px;
+        border: none;
+        height: 50px;
+        color: white;
+        background: $blue;
+        outline: none !important;
+        margin-left: auto !important;
+        display: block;
+        font-family: Bold;
+    }
+}

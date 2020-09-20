@@ -46,12 +46,24 @@ $yellow : #FEDB4D;
     background-size: 100% auto;
     color: white;
     line-height: 10px;
-    font-family: Bold !important;
+    font-family: Regular !important;
     font-variant: small-caps;
     height: 150px;
     padding: 20px;
 
     p{
         color: #ccc;
+    }
+}
+
+.back{
+    font-size: 14px;
+    color: white !important;
+    display: flex;
+    align-items: center;
+    text-decoration: none !important;
+
+    i{
+        margin-right: 10px;
     }
 }

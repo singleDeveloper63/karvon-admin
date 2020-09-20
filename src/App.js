@@ -1,9 +1,9 @@
 import React , { useState , useEffect } from 'react';
 import './App.scss';
-import { Dashboard, Login , Category} from './pages';
+import { Dashboard, Login , Category , AddCategory} from './pages';
 import 'popper.js';
 import 'bootstrap/dist/js/bootstrap';
-import { Switch , Route , Redirect} from 'react-router-dom';
+import { Switch , Route } from 'react-router-dom';
 import { AppLayout } from './components';
 
 function App(){
@@ -29,6 +29,7 @@ function App(){
             <Route exact path='/' component={ Dashboard } />
             <Route exact path='/dashboard' component={ Dashboard }/>
             <Route exact path='/categories' component={ Category }/>
+            <Route exact path='/categories/add' component={ AddCategory }/>
           </Switch>
         </AppLayout>
     </div>

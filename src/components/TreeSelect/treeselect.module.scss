@@ -1,0 +1,60 @@
+@import '../../globals.scss';
+
+.treeselect{
+    width: 100%;
+    display: inline-block;
+    font-family: Regular;
+
+    &_menu{
+        box-shadow: 0 3px 5px -2px rgba(0,0,0,0.4);
+        transition: 0.3s !important;
+        max-height: 50vh;
+        overflow-y: scroll;
+
+        ul{
+            padding-left: 20px !important;
+        }
+
+        &_label{
+            padding: 5px 15px;
+            color: black !important;
+            cursor: pointer !important;
+
+            &:hover{
+                background: $yellow;
+            }
+        }
+    }
+
+    &_placeholder{
+        border: 1px solid lightgray;
+        padding: 10px 15px;
+        padding-right: 50px;
+        position: relative;
+        width: 100% !important;
+        text-overflow: ellipsis;
+        display: block;
+        overflow: hidden;
+        border-radius: 5px;
+        line-break: loose;
+        white-space: nowrap;
+        word-wrap: none;
+        cursor: pointer;
+
+        i{
+            display: inline-block;
+            position: absolute;
+            right: 10px;
+            font-size: 20px;
+        }
+    }
+
+    ul{
+        list-style: none ;
+        padding: 0px;
+    }
+}
+
+.focused{
+    border: 2px solid $yellow;
+}

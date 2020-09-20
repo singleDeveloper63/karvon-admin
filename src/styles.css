@@ -4,3 +4,11 @@
 .d-block{
     display: block !important;
 }
+
+body{
+    background-color: #eee;
+}
+
+input.form-control{
+    box-shadow: none !important;
+}

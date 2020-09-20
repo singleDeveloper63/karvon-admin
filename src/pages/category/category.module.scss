@@ -1,0 +1,12 @@
+@import '../../globals.scss';
+
+.addcategory{
+    font-family: Regular;
+    padding: 10px 15px;
+    background-color: $yellow;
+    border: none;
+    border-radius: 100px;
+    color: black !important;
+    text-decoration: none !important;
+    font-variant: small-caps;
+}
