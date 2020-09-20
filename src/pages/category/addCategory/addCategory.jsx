@@ -1,11 +1,8 @@
-import React , {useState} from 'react';
+import React  from 'react';
 import { PageTitle , TreeSelect } from '../../../components';
 import st from './addCategory.module.scss';
-import Waves from 'node-waves';
 import cl from 'classnames';
 import { Link } from 'react-router-dom';
-import DropDownTreeSelect from 'react-dropdown-tree-select';
-import 'react-dropdown-tree-select/dist/styles.css';
 
 
 function AddCategory(){
