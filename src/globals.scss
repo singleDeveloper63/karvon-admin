@@ -45,7 +45,7 @@ $yellow : #FEDB4D;
     background-image: url(./assets/images/back.png) ;
     background-size: 100% auto;
     color: white;
-    line-height: 10px;
+    line-height: 20px;
     font-family: Regular !important;
     font-variant: small-caps;
     height: 150px;
@@ -66,4 +66,8 @@ $yellow : #FEDB4D;
     i{
         margin-right: 10px;
     }
+}
+
+::-webkit-scrollbar{
+    width: 5px;
 }

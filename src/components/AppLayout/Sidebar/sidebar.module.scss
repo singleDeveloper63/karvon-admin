@@ -4,6 +4,7 @@
     display: block;
     position: fixed;
     top: 0%;
+    overflow-y: scroll;
     z-index: 3;
     left: -250px;
     transition: 0.3s !important;

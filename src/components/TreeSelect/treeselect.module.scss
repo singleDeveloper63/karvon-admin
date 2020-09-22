@@ -6,10 +6,14 @@
     font-family: Regular;
 
     &_menu{
-        box-shadow: 0 3px 5px -2px rgba(0,0,0,0.4);
+        box-shadow: 0 6px 12px -2px rgba(0,0,0,0.7);
         transition: 0.3s !important;
         max-height: 50vh;
         overflow-y: scroll;
+        position: absolute;
+        display: block;
+        background: white;
+        width: 100%;
 
         ul{
             padding-left: 20px !important;
@@ -19,9 +23,10 @@
             padding: 5px 15px;
             color: black !important;
             cursor: pointer !important;
+            border-bottom: 1px solid lightgray;
 
             &:hover{
-                background: $yellow;
+                background: lightgray;
             }
         }
     }
@@ -57,4 +62,8 @@
 
 .focused{
     border: 2px solid $yellow;
+}
+
+.relative{
+    position: relative !important;
 }
