@@ -6,7 +6,7 @@
     font-family: Regular;
 
     &_menu{
-        box-shadow: 0 6px 12px -2px rgba(0,0,0,0.7);
+        box-shadow: 0 4px 15px -4px rgba(0,0,0,0.3);
         transition: 0.3s !important;
         max-height: 50vh;
         overflow-y: scroll;
@@ -20,10 +20,29 @@
         }
 
         &_label{
-            padding: 5px 15px;
+            padding: 7px 15px;
             color: black !important;
+            display: flex;
+            align-items: center;
             cursor: pointer !important;
             border-bottom: 1px solid lightgray;
+
+
+            label{
+                cursor: pointer;
+            }
+
+            i{
+                border: 1px solid gray;
+                border-radius: 100px;
+                transition: 0.1s;
+                margin-right: 10px;
+
+                &:hover{
+                    background: gray;
+                    color: white;
+                }
+            }
 
             &:hover{
                 background: lightgray;

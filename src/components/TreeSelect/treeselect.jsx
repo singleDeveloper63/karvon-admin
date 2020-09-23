@@ -14,7 +14,7 @@ function TreeSelect({data , onChange ,placeholder , id }){
                 {
                     open && 
                         <ul className={cl(st.treeselect_menu )}>
-                            <MakeMenu data={data} onSelect={ (text,val) => {
+                            <MakeMenu order={0} data={data} onSelect={ (text,val) => {
                                 setSelected(text);
                                 onChange(val);
                             }}/>
@@ -26,7 +26,7 @@ function TreeSelect({data , onChange ,placeholder , id }){
 }
 
 
-function MakeMenu({data , onSelect }){
+function MakeMenu({data , onSelect ,order}){
     
     useEffect(() => {
         Waves.init();
@@ -39,13 +39,13 @@ function MakeMenu({data , onSelect }){
                 <div onClick={ () => {
                     onSelect(item.name.uz, item._id);
                 }} className={ cl(st.treeselect_menu_label,'catLabel') }>
-                    { item.children && item.children.length > 0 && <i className="bx bx-plus" data-toggle="collapse" data-target={`#child-${index}`}></i> } 
+                    { item.children && item.children.length > 0 && <i className="bx bx-plus" data-toggle="collapse" data-target={`#child-${index}${order}`}></i> } 
                     <label > {item.name.uz} </label>
                 </div>
                 {
                     item.children.length>0 && 
-                    <ul className="collapse" id={`child-${index}`}>
-                        <MakeMenu onSelect={onSelect} data={item.children}/>
+                    <ul className="collapse" id={`child-${index}${order}`}>
+                        <MakeMenu onSelect={onSelect} data={item.children} order={order+1}/>
                     </ul>
                 }
             </li>

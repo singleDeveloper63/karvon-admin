@@ -44,6 +44,11 @@
         margin-left: auto !important;
         display: block;
         font-family: Bold;
+
+        &:disabled{
+            background-color: #aaa;
+            color: #ddd;
+        }
     }
 }
 
