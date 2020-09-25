@@ -39,11 +39,11 @@ function MakeMenu({data , onSelect ,order}){
                 <div onClick={ () => {
                     onSelect(item.name.uz, item._id);
                 }} className={ cl(st.treeselect_menu_label,'catLabel') }>
-                    { item.children && item.children.length > 0 && <i className="bx bx-plus" data-toggle="collapse" data-target={`#child-${index}${order}`}></i> } 
+                    { item.children && order<2 && item.children.length > 0 && <i className="bx bx-plus" data-toggle="collapse" data-target={`#child-${index}${order}`}></i> } 
                     <label > {item.name.uz} </label>
                 </div>
                 {
-                    item.children.length>0 && 
+                    item.children.length>0 && order<2 && 
                     <ul className="collapse" id={`child-${index}${order}`}>
                         <MakeMenu onSelect={onSelect} data={item.children} order={order+1}/>
                     </ul>

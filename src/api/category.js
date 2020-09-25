@@ -17,5 +17,13 @@ export const categoryApi = {
         return axios.post(api,data,{
             headers
         })
+    },
+    removeCategory : id => {
+        return axios.delete(`${api}${id}`,{
+            headers
+        })
+    },
+    putCategory : ({data , id}) => {
+        axios.put(`${api}${id}`,data,{ headers })
     }
 }

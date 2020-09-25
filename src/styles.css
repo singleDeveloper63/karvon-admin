@@ -12,3 +12,11 @@ body{
 input.form-control{
     box-shadow: none !important;
 }
+
+.form-in-alert label{
+    float: left;
+}
+
+.form-in-alert .form-group{
+    margin: 10px 0px;
+}

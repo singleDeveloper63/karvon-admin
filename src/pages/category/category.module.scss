@@ -31,6 +31,11 @@
     border: 1px solid lightgray;
     background: white;
     padding: 20px;
+    margin-bottom: 40px;
+
+    label{
+        cursor: pointer;
+    }
 }
 
 .category_table{
@@ -53,11 +58,13 @@
             border-bottom: 1px solid lightgray;
             font-size: 16px;
             justify-content: space-between;
+            cursor: pointer;
             font-family: Regular;
 
             button{
                 width: 30px;
                 height: 30px;
+                background: transparent;
                 border: none;
                 border-radius: 100px !important;
                 padding: 0px 0px 0px 0px !important;
@@ -74,8 +81,6 @@
 
             i{
                 margin-right: 10px;
-                border: 1px solid gray;
-                border-radius: 100px;
                 transition: 0.1s;
 
                 &:active{
@@ -92,12 +97,9 @@
 }
 
 .edit{
-    background-color: $blue;
+    color: $blue !important;
 
     &:hover{
-        background: white;
-        border: 1px solid $blue;
-
         i{
             color: $blue !important;
         }
@@ -105,14 +107,28 @@
 }
 
 .delete{
-    background-color: tomato;
+    color: tomato !important;
 
     &:hover{
-        background: white;
-        border: 1px solid tomato;
-
         i{
             color: tomato !important;
         }
+    }
+}
+
+
+.nodata{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    img{
+        width: 120px;
+    }
+    p{
+        font-family: Regular;
+        text-align: center;
+        max-width: 600px;
+        margin-top: 20px;
     }
 }
