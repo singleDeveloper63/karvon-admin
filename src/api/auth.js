@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = 'http://umdsoft.uz/api/auth/';
+const api = 'http://cdn.umdsoft.uz/api/auth/';
 
 export const authApi = {
     login : data => {

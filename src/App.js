@@ -1,6 +1,6 @@
 import React , { useState , useEffect } from 'react';
 import './App.scss';
-import { Dashboard, Login , Category , AddCategory} from './pages';
+import { Dashboard, Login , Category , AddCategory, Blog, AddBlog, Banner, BannerAdd} from './pages';
 import 'popper.js';
 import 'bootstrap/dist/js/bootstrap';
 import { Switch , Route } from 'react-router-dom';
@@ -30,6 +30,10 @@ function App(){
             <Route exact path='/dashboard' component={ Dashboard }/>
             <Route exact path='/categories' component={ Category }/>
             <Route exact path='/categories/add' component={ AddCategory }/>
+            <Route exact path='/blog' component={ Blog }/>
+            <Route exact path='/blog/add' component={ AddBlog }/>
+            <Route exact path='/banner' component={Banner}/>
+            <Route exact path='/banner/add' component={BannerAdd}/>
           </Switch>
         </AppLayout>
     </div>

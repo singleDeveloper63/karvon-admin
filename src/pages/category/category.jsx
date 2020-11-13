@@ -5,7 +5,7 @@ import { PageTitle , Loader } from '../../components';
 import { Link } from 'react-router-dom';
 import Waves from 'node-waves';
 import Swal from 'sweetalert2';
-import nocategory from '../../assets/images/nocategory.svg';
+import nodata from '../../assets/images/nodata.svg';
 import { categoryApi } from '../../api/category';
 import withReactContent from 'sweetalert2-react-content';
 
@@ -96,7 +96,7 @@ function Category(){
                 </div> : 
                 <div className={cl(st.category)}>
                     <div className={cl(st.nodata)}>
-                        <img src={nocategory} alt="NoData"/>
+                        <img src={nodata} alt="NoData"/>
                         <p> Hozircha kategoriyalar mavjud emas. Siz <kbd>Qo'shish</kbd> tugmasini bosib yangi kategoriya yaratishingiz mumkun .</p>
                     </div>
                 </div>
@@ -137,4 +137,6 @@ function CategoryList({data , onChange , onDelete , order}){
         })
     )
 }
+
+
 export default Category;

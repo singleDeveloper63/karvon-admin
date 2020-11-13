@@ -1,0 +1,33 @@
+@import '../../../globals.scss';
+
+.addPage{
+    @include page();
+    max-width: 100% !important;
+}
+
+.tags{
+    border: 1px solid lightgray;
+    height: 50px !important;
+    display: flex;
+    align-items: center;
+    border-radius: 5px;
+    padding: 0px 5px;
+
+    a{
+        color: white !important;
+        text-decoration: none !important;
+        margin-left: 5px;
+    }
+
+    input{
+        background: white !important;
+        height: auto !important;
+        &:focus{
+            border: none !important;
+        }
+    }
+}
+
+.tagFocused{
+    border: 2px solid $yellow !important;
+}

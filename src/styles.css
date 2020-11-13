@@ -20,3 +20,25 @@ input.form-control{
 .form-in-alert .form-group{
     margin: 10px 0px;
 }
+
+.react-tagsinput-tag{
+    background: #4E7DF1 !important;
+    color: white !important;
+    border: none !important;
+    border-radius: 100px !important;
+    padding: 3px 10px !important;
+}
+
+.dropdown-menu{
+    transition: 0.3s !important;
+}
+.dropdown-item{
+    font-size: 14px !important;
+}
+.dropdown-item:hover{
+    background: lightgray;
+}
+
+.btn{
+    box-shadow: none !important;
+}

@@ -1,6 +1,6 @@
 import axios from 'axios';
 
-const api = 'http://umdsoft.uz/api/category/';
+const api = 'http://cdn.umdsoft.uz/api/category/';
 const headers = {
     "Authorization" : `Bearer ${localStorage.getItem('token')}`
 }

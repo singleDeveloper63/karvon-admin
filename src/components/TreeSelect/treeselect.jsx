@@ -43,7 +43,7 @@ function MakeMenu({data , onSelect ,order}){
                     <label > {item.name.uz} </label>
                 </div>
                 {
-                    item.children.length>0 && order<2 && 
+                    item.children && item.children.length>0 && order<2 && 
                     <ul className="collapse" id={`child-${index}${order}`}>
                         <MakeMenu onSelect={onSelect} data={item.children} order={order+1}/>
                     </ul>

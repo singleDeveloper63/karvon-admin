@@ -19,7 +19,7 @@ function Navbar({onToggle , id , isOpen }){
 
             <input placeholder="Izlash..." type="search" className={cl(st.navbar_search)}/>
 
-            <div className="dropdown" className={cl(st.navbar_drop)}>
+            <div className={cl(st.navbar_drop,"dropdown")}>
                 <button className={cl("dropdown-toggle",st.navbar_drop_toggle)} data-toggle="dropdown">
                     <i className="bx bx-user-circle"></i>
                 </button>
